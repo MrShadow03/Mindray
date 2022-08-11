@@ -190,6 +190,26 @@ a {
   background-color: #c7000b;
 }
 
+.btn-dark {
+  font-family: "Myriad Pro", sans-serif;
+  margin: 4.5rem 0 0 0;
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #c7000b;
+  border: 1px solid #9b0000;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn-dark:hover {
+  color: #fff;
+  background-color: #c7000b;
+  border-color: #9b0000;
+}
+
 .font-test {
   font-family: "Myriad Pro", sans-serif;
   font-weight: 300;

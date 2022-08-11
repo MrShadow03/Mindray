@@ -1,16 +1,6 @@
 .btn-primary{
-    font-family: 'Myriad Pro', sans-serif;
-    margin: 4.5rem 0 0 0;
-    padding: 1.5rem 3rem;
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: $red-btn;
-    border: 1px solid $red-dark;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-    &:hover{
-        color: $white;
-        background-color: $red-btn;
-    }
+    @include button;
+}
+.btn-dark{
+    @include button($theme-dark:true);
 }

@@ -6,3 +6,26 @@
         width: 10rem;
     }
 }
+ @mixin button($theme-dark:false) {
+    font-family: 'Myriad Pro', sans-serif;
+    margin: 4.5rem 0 0 0;
+    padding: 1.5rem 3rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $red-btn;
+    border: 1px solid $red-dark;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover{
+        color: $white;
+        background-color: $red-btn;
+        @if $theme-dark{
+            border-color: $red-dark;
+        }
+    }
+    @if $theme-dark{
+        color: $white;
+        border: 1px solid $white;
+    }
+ }
