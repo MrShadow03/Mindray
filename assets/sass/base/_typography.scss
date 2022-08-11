@@ -1,0 +1,95 @@
+.top-navbar-text{
+    font-size: 1.6rem;
+    color: $white;
+}
+.nav-menu-link{
+    font-size: 1.8rem;
+    color: $white;
+    font-weight: 600;
+}
+.menu-tab-btn{
+    font-size: 1.8rem;
+    color: $white;
+}
+.banner-title{
+    font-size: 7rem;
+    color: $white;
+    line-height: 7.7rem;
+}
+.banner-desc{
+    font-size: 2.2rem;
+    color: $white;
+    line-height: 3.6rem;
+}
+.text-title-lg{
+    font-size: 5.6rem;
+    color: $text-dark;
+    line-height: 6.2rem;
+    font-weight: 700;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -1rem;
+        height: 1rem;
+        width: 10rem;
+        z-index: -1;
+        background-color: $red-dark;
+        animation: titlebar .5s ease-in-out;
+    }
+}
+.text-desc{
+    font-size: 2.2rem;
+    color: $text-light;
+    line-height: 3.6rem;
+    position: relative;
+}
+.text-title-sm{
+    font-size: 2.4rem;
+    color: $text-dark;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.text-content-title{
+    font-size: 2.4rem;
+    color: $text-dark;
+    line-height: 3.9rem;
+    font-weight: 600;
+}
+.text-content-type{
+    font-size: 1.4rem;
+    color: $red-btn;
+}
+.text-content-date{
+    font-size: 1.4rem;
+    color: $text-date;
+}
+.text-footer-menu-title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $text-white-dark;
+}
+.text-footer-menu-link{
+    font-size: 1.6rem;
+    color: $text-white-dark;
+}
+.text-footer-title{
+    font-size: 1.8rem;
+    color: $text-white-darker;
+}
+.text-footer-link{
+    font-size: 1.4rem;
+    color: $text-white-darker;
+}
+
+
+
+
+
+.bg-dark{
+    background-color: $gray-darker;
+}
+.w-40{
+    width: 40%;
+}

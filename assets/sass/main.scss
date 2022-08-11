@@ -1,0 +1,27 @@
+@import"./utils/_colors";
+@import"./utils/fonts";
+@import"./base/_reset";
+@import"./utils/mixins";
+@import"./base/typography";
+@import"./components/buttons";
+
+.font-test{
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 300;
+}
+.font-test-semibold{
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 600;
+}
+.font-test-bold{
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 700;
+}
+.font-test-black{
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 900;
+}
+.font-test-regular{
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 400;
+}
