@@ -1,11 +1,4 @@
-@keyframes titlebar{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 10rem;
-    }
-}
+
  @mixin button($theme-dark:false) {
     font-family: 'Myriad Pro', sans-serif;
     margin: 4.5rem 0 0 0;

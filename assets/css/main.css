@@ -48,6 +48,16 @@ a {
   text-decoration: none;
 }
 
+body {
+  position: relative;
+  background-color: aliceblue;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 @-webkit-keyframes titlebar {
   0% {
     width: 0;
@@ -74,6 +84,11 @@ a {
   font-size: 1.8rem;
   color: #fff;
   font-weight: 600;
+}
+
+.nav-icon {
+  color: #fff;
+  font-size: 1.8rem;
 }
 
 .menu-tab-btn {
@@ -210,27 +225,143 @@ a {
   border-color: #9b0000;
 }
 
-.font-test {
-  font-family: "Myriad Pro", sans-serif;
+section.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+section.nav .nav-topbar {
+  padding-block: 1.6rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.432);
+}
+section.nav .nav-topbar:hover {
+  background-color: #c4161c;
+}
+section.nav .nav-topbar .container {
+  display: flex;
+  justify-content: flex-end;
+}
+section.nav .nav-topbar .container .topbar-links {
+  display: flex;
+}
+section.nav .nav-topbar .container .topbar-links .top-navbar-text {
+  border-right: 0.1rem solid #fff;
+  padding-inline: 3.6rem;
+}
+section.nav .nav-topbar .container .topbar-links .language {
+  padding-right: unset;
+  border: unset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.nav .nav-topbar .container .topbar-links .language i {
+  margin-right: 2rem;
   font-weight: 300;
+  font-size: 2rem;
+}
+section.nav .nav-main {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+}
+section.nav .nav-main .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+section.nav .nav-main .container .nav-left {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+section.nav .nav-main .container .nav-left .logo {
+  aspect-ratio: 1644/410;
+  height: 3rem;
+  background-image: url(./../img/logo_white.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section.nav .nav-main .container .nav-left .nav-links {
+  display: flex;
+  align-items: center;
+  margin-left: 14rem;
+  height: inherit;
+}
+section.nav .nav-main .container .nav-left .nav-links li {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding-inline: 3rem;
+  position: relative;
+}
+section.nav .nav-main .container .nav-left .nav-links li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #c4161c;
+  opacity: 0;
+}
+section.nav .nav-main .container .nav-left .nav-links li:hover::before {
+  opacity: 1;
+}
+section.nav .nav-main .container .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+section.nav .nav-main .container .nav-right a i {
+  font-size: 2rem;
+}
+section.nav:hover .nav-topbar {
+  background-color: #c4161c;
+}
+section.nav:hover .nav-main {
+  background-color: #fff;
+}
+section.nav:hover .nav-main .container .nav-left .logo {
+  background-image: url(./../img/logo_red.png);
+}
+section.nav:hover .nav-main .container .nav-left .nav-links li {
+  padding-inline: 3rem;
+  position: relative;
+}
+section.nav:hover .nav-main .container .nav-left .nav-links li a {
+  color: #242728;
+}
+section.nav:hover .nav-main .container .nav-right a i {
+  color: #242728;
 }
 
-.font-test-semibold {
-  font-family: "Myriad Pro", sans-serif;
-  font-weight: 600;
+section.product-tab {
+  position: fixed;
+  top: 12rem;
+  left: 19rem;
+  background-color: #fff;
+  min-height: 48rem;
+  z-index: -1;
 }
-
-.font-test-bold {
-  font-family: "Myriad Pro", sans-serif;
-  font-weight: 700;
+section.product-tab .main-tab-title {
+  min-width: 34rem;
 }
-
-.font-test-black {
-  font-family: "Myriad Pro", sans-serif;
-  font-weight: 900;
+section.product-tab .main-tab-title .tab-wrapper {
+  margin-top: 10rem;
 }
-
-.font-test-regular {
-  font-family: "Myriad Pro", sans-serif;
-  font-weight: 400;
+section.product-tab .main-tab-title .tab-wrapper li {
+  padding-block: 3rem;
+}
+section.product-tab .main-tab-title .tab-wrapper li a.menu-tab-btn {
+  color: #242728;
+  margin-left: 4rem;
+}
+section.product-tab .main-tab-title .tab-wrapper li:hover {
+  background-color: #c4161c;
+}
+section.product-tab .main-tab-title .tab-wrapper li:hover a {
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
