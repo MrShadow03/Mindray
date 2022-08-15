@@ -1,25 +1,27 @@
-html{
-    font-size: 0.521vw;
-    font-family: 'Myriad Pro', sans-serif;
-    -webkit-font-smoothing: subpixel-antialiased;
+html {
+	font-size: 0.521vw;
+	font-family: "Myriad Pro", sans-serif;
+	-webkit-font-smoothing: subpixel-antialiased;
 }
-@media screen and (max-width: 960px){
-    html{
-        font-size: 1.042vw;
-    }
+@media screen and (max-width: 960px) {
+	html {
+		font-size: 1.042vw;
+	}
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-ol,ul,li {
-    list-style: none;
+ol,
+ul,
+li {
+	list-style: none;
 }
-a{
-    text-decoration: none;
+a {
+	text-decoration: none;
 }
-body{
-    position: relative;
-    background-color: aliceblue;
+body {
+	position: relative;
+	background-color: rgb(129, 155, 179);
 }
