@@ -2,7 +2,7 @@ section.nav {
 	width: 100%;
 	z-index: 100;
 	.nav-topbar {
-		padding-block: 1.6rem;
+		padding-block: 1.5rem;
 		border-bottom: 0.1rem solid $white-border;
 		&:hover {
 			background-color: $red;
@@ -83,7 +83,7 @@ section.nav {
 						.main-tab-title {
 							@include displayNone;
 							position: fixed;
-							min-width: 34rem;
+							min-width: 33rem;
 							background: #fff;
 							top: 8rem;
 							left: -26rem;
@@ -109,7 +109,7 @@ section.nav {
 										@include displayNone;
 										position: fixed;
 										background-color: $white;
-										min-width: 40rem;
+										min-width: 33rem;
 										border-left: 0.1rem solid $text-white-darker;
 										overflow-y: auto;
 										&::scrollbar {
@@ -141,6 +141,7 @@ section.nav {
 													transform: translateY(-50%);
 												}
 											}
+											//submenu1-Solutions = >
 											.submenu1-link1 {
 												&:hover {
 													.submenu11 {
@@ -163,9 +164,49 @@ section.nav {
 													}
 												}
 											}
+											//submenu = > >
+											.submenu11-link1 {
+												position: relative;
+												&:hover {
+													.submenu111 {
+														display: block;
+													}
+												}
+											}
+											//submenu = > > >
+											.submenu111-link1 {
+												position: relative;
+												&:hover {
+													.submenu1111 {
+														display: block;
+													}
+												}
+											}
 											.submenu11-list:hover{
 												.submenu11-link{
 													color: $red;
+												}
+												.submenu11-icon{
+													color: $red;
+													opacity: 1;
+												}
+											}
+											.submenu111-list:hover{
+												.submenu111-link{
+													color: $red;
+												}
+												.submenu111-icon{
+													color: $red;
+													opacity: 1;
+												}
+											}
+											.submenu1111-list:hover{
+												.submenu1111-link{
+													color: $red;
+												}
+												.submenu1111-icon{
+													color: $red;
+													opacity: 1;
 												}
 											}
 										}
@@ -189,7 +230,7 @@ section.nav {
 									
 									.submenu1 {
 										top: 8rem;
-										left: 8rem;
+										left: 7rem;
 										.submenu-wrapper {
 											.submenu-list {
 												position: relative;
@@ -205,25 +246,33 @@ section.nav {
 											}
 										}
 									}
-									.submenu11 {
+									.submenu11,.submenu12,.submenu13 {
 										top: 8rem;
-										left: 48rem;
+										left: 40rem;
 										@include displayNone;
 									}
-									.submenu12 {
+									
+									.submenu111 {
 										top: 8rem;
-										left: 48rem;
+										left: 73rem;
 										@include displayNone;
 									}
-									.submenu13 {
+									.submenu1111 {
 										top: 8rem;
-										left: 48rem;
+										left: 106rem;
 										@include displayNone;
 									}
 								}
 								.tab-solution {
 									&:hover {
 										.submenu1 {
+											display: block;
+										}
+									}
+								}
+								.tab-products {
+									&:hover {
+										.submenu2 {
 											display: block;
 										}
 									}
