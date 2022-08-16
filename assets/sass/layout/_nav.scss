@@ -112,6 +112,9 @@ section.nav {
 										min-width: 40rem;
 										border-left: 0.1rem solid $text-white-darker;
 										overflow-y: auto;
+										&::scrollbar {
+											width: 4rem;
+										  }
 										.submenu-wrapper {
 											padding: 2rem 0 2.3rem 0;
 											.submenu-list {
@@ -160,8 +163,30 @@ section.nav {
 													}
 												}
 											}
+											.submenu11-list:hover{
+												.submenu11-link{
+													color: $red;
+												}
+											}
 										}
+										//for firefox
+										scrollbar-width: thin;
+										scrollbar-color: $text-white-darker $white;
+
+										//for webkit browsers
+
+										&::-webkit-scrollbar{
+											width: .4rem;
+											border-radius: 3rem;
+										  }
+										&::-webkit-scrollbar-thumb{
+											background-color: $text-white-darker;
+										  }
+										&::-webkit-scrollbar-track{
+											background-color: $white;
+										  }
 									}
+									
 									.submenu1 {
 										top: 8rem;
 										left: 8rem;
@@ -172,6 +197,10 @@ section.nav {
 											.submenu1-list:hover {
 												.submenu1-link {
 													color: $red;
+												}
+												.submenu1-icon {
+													color: $red;
+													opacity: 1;
 												}
 											}
 										}

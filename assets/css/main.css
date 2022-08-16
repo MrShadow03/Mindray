@@ -350,6 +350,11 @@ section.nav .nav-main .container .nav-left .nav-links .product-list .main-tab-ti
   min-width: 40rem;
   border-left: 0.1rem solid #dcdddd;
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #dcdddd #fff;
+}
+section.nav .nav-main .container .nav-left .nav-links .product-list .main-tab-title .tab-wrapper li.tab-title .submenu::scrollbar {
+  width: 4rem;
 }
 section.nav .nav-main .container .nav-left .nav-links .product-list .main-tab-title .tab-wrapper li.tab-title .submenu .submenu-wrapper {
   padding: 2rem 0 2.3rem 0;
@@ -388,6 +393,19 @@ section.nav .nav-main .container .nav-left .nav-links .product-list .main-tab-ti
 section.nav .nav-main .container .nav-left .nav-links .product-list .main-tab-title .tab-wrapper li.tab-title .submenu .submenu-wrapper .submenu1-link3:hover .submenu13 {
   display: block;
 }
+section.nav .nav-main .container .nav-left .nav-links .product-list .main-tab-title .tab-wrapper li.tab-title .submenu .submenu-wrapper .submenu11-list:hover .submenu11-link {
+  color: #c4161c;
+}
+section.nav .nav-main .container .nav-left .nav-links .product-list .main-tab-title .tab-wrapper li.tab-title .submenu::-webkit-scrollbar {
+  width: 0.4rem;
+  border-radius: 3rem;
+}
+section.nav .nav-main .container .nav-left .nav-links .product-list .main-tab-title .tab-wrapper li.tab-title .submenu::-webkit-scrollbar-thumb {
+  background-color: #dcdddd;
+}
+section.nav .nav-main .container .nav-left .nav-links .product-list .main-tab-title .tab-wrapper li.tab-title .submenu::-webkit-scrollbar-track {
+  background-color: #fff;
+}
 section.nav .nav-main .container .nav-left .nav-links .product-list .main-tab-title .tab-wrapper li.tab-title .submenu1 {
   top: 8rem;
   left: 8rem;
@@ -397,6 +415,10 @@ section.nav .nav-main .container .nav-left .nav-links .product-list .main-tab-ti
 }
 section.nav .nav-main .container .nav-left .nav-links .product-list .main-tab-title .tab-wrapper li.tab-title .submenu1 .submenu-wrapper .submenu1-list:hover .submenu1-link {
   color: #c4161c;
+}
+section.nav .nav-main .container .nav-left .nav-links .product-list .main-tab-title .tab-wrapper li.tab-title .submenu1 .submenu-wrapper .submenu1-list:hover .submenu1-icon {
+  color: #c4161c;
+  opacity: 1;
 }
 section.nav .nav-main .container .nav-left .nav-links .product-list .main-tab-title .tab-wrapper li.tab-title .submenu11 {
   top: 8rem;
