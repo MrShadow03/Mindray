@@ -1,0 +1,89 @@
+section.hero-banner{
+    .swiper{
+        height: 102rem;
+        width: 100%;
+        .swiper-wrapper{
+            .swiper-slide{
+                .banner-wrapper{
+                    position: relative;
+                    background-image: url(../img/banners/banner1.jpg);
+                    height: inherit;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    overflow: hidden;
+                    .container{
+                        position: relative;
+                        .texts{
+                            width: 60%;
+                            position: absolute;
+                            top: 25rem;
+                            height: inherit;
+                            z-index: 10;
+                            .banner-title{
+                                margin-bottom: 3rem;
+                            }
+                            .banner-desc{
+                                margin-bottom: 6rem;
+                            }
+                            .btn-dark{
+                                margin-top: 4rem;
+                            }
+                        }
+                    }
+                }
+                .banner-2{
+                    background-image: url(../img/banners/banner2.jpg);
+                }
+                .banner-3{
+                    background-image: url(../img/banners/banner3.jpg);
+                }
+            }
+        }
+        &::before{
+            z-index: 2;
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -10rem;
+            width: 54rem;
+            height: 22rem;
+            border-radius: 0 20rem 0 0;
+            background-color: #fff;
+            overflow: hidden;
+        }
+    }
+}
+.swiper-pagination-bullet, 
+.swiper-pagination-bullet-active-next, 
+.swiper-pagination-bullet-active-next-next,
+.swiper-pagination-bullet-active-prev, 
+.swiper-pagination-bullet-active-prev-prev{
+    height: unset;
+    width: unset;
+    transform: unset;
+    background-color: $white;
+    height: .25rem;
+    width: 15%;
+    border-radius: unset;
+    opacity: 1 !important;
+    position: unset !important;
+    border-radius: 1rem;
+    transform-origin: center;
+    transition: all .7s ease-in-out !important;
+} 
+.swiper-pagination-bullet-active{
+    background-color: $red;
+    width: 40%;
+    border-radius: unset;
+    transition: all .7s ease-in-out !important;
+    transform-origin: center;
+}
+.swiper-pagination-bullets-dynamic{
+    position: absolute;
+    display: flex !important;
+    width: 70rem !important;
+    align-items: center;
+    justify-content: space-between !important;
+    margin-bottom: 10rem;
+}

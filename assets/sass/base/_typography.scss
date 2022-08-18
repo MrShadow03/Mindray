@@ -1,3 +1,11 @@
+@keyframes banner_title{
+    0%{
+        transform: translateY(15rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
 .top-navbar-text{
     font-size: 1.6rem;
     color: $white;
@@ -16,9 +24,14 @@
     color: $white;
 }
 .banner-title{
-    font-size: 7rem;
-    color: $white;
-    line-height: 7.7rem;
+    overflow: hidden;
+    h1,p{
+        font-size: 7rem;
+        color: $white;
+        line-height: 7.7rem;
+        font-weight: normal;
+        animation: banner_title 1s ease-in-out;
+    }
 }
 .banner-desc{
     font-size: 2.2rem;

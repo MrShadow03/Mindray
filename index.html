@@ -5,19 +5,17 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Mindray-Home</title>
-		<link
-			rel="shortcut icon"
-			href="./assets/img/favicon.ico"
-			type="image/x-icon"
-		/>
-		<link
-			rel="stylesheet"
-			href="./assets/vendors/simple_line_icons/css/simple-line-icons.css"
-		/>
+		<link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="./assets/vendors/simple_line_icons/css/simple-line-icons.css"/>
+		<link rel="stylesheet" href="./assets/vendors/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="./assets/css/" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
 	</head>
 	<body>
-		<section class="nav bg-dark">
+
+		<!-- ======================Nav-Starts======================== -->
+
+		<section class="nav">
 			<div class="nav-topbar">
 				<div class="container">
 					<ul class="topbar-links">
@@ -156,7 +154,7 @@
 
 
 										</li>
-										<li class="tab-title tab-solution">
+										<li class="tab-title tab-solution" id="larger-tab-btn">
 											<a href="#" class="menu-tab-btn tab-link">Products</a>
 
 											<div class="submenu submenu1">
@@ -334,6 +332,701 @@
 															</ul>
 														</div>
 													</li>
+													<li class="submenu-list submenu1-list has-icon submenu1-link1">
+														<a href="#" class="menu-tab-btn submenu-link submenu1-link">Patient Monitoring</a>
+														<i class="icon-arrow-right submenu1-icon"></i>
+														
+														<div class="submenu submenu11">
+															<ul class="submenu-wrapper">
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Continuous Patient Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">High Acuity</a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">BeneVision N22/N19</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">BeneVision N17/N15/N12</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">BeneVision N1</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">BeneView TDS </a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">Mid/Low Acuity </a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">ePM Series</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">uMEC</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Transport Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+																	
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list  submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">BeneVision N1</a>
+																			</li>
+																			<li class="submenu-list submenu111-list  submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">ePM10</a>
+																			</li>
+																			<li class="submenu-list submenu111-list  submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">BeneView TDS</a>
+																			</li>
+																			<li class="submenu-list submenu111-list">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link no-border" >View All</a>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Telemetry Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">Menu 4</a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">Menu 5</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																			<li class="submenu-list submenu111-list">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link no-border" >View All</a>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Vital Sign Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">Menu 4</a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">Menu 5</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																			<li class="submenu-list submenu111-list">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link no-border" >View All</a>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Centralized Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">Menu 4</a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">Menu 5</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																			<li class="submenu-list submenu111-list">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link no-border" >View All</a>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Patient Monitoring Accessories</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link no-border" >View All</a>
+																</li>
+															</ul>
+														</div>
+													</li>
+													<li class="submenu-list submenu1-list has-icon submenu1-link1">
+														<a href="#" class="menu-tab-btn submenu-link submenu1-link">Patient Monitoring</a>
+														<i class="icon-arrow-right submenu1-icon"></i>
+														
+														<div class="submenu submenu11">
+															<ul class="submenu-wrapper">
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Continuous Patient Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">High Acuity</a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">BeneVision N22/N19</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">BeneVision N17/N15/N12</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">BeneVision N1</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">BeneView TDS </a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">Mid/Low Acuity </a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">ePM Series</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">uMEC</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Transport Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+																	
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list  submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">BeneVision N1</a>
+																			</li>
+																			<li class="submenu-list submenu111-list  submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">ePM10</a>
+																			</li>
+																			<li class="submenu-list submenu111-list  submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">BeneView TDS</a>
+																			</li>
+																			<li class="submenu-list submenu111-list">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link no-border" >View All</a>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Telemetry Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">Menu 4</a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">Menu 5</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																			<li class="submenu-list submenu111-list">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link no-border" >View All</a>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Vital Sign Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">Menu 4</a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">Menu 5</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																			<li class="submenu-list submenu111-list">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link no-border" >View All</a>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Centralized Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">Menu 4</a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">Menu 5</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																			<li class="submenu-list submenu111-list">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link no-border" >View All</a>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Patient Monitoring Accessories</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link no-border" >View All</a>
+																</li>
+															</ul>
+														</div>
+													</li>
+													<li class="submenu-list submenu1-list has-icon submenu1-link1">
+														<a href="#" class="menu-tab-btn submenu-link submenu1-link">Patient Monitoring</a>
+														<i class="icon-arrow-right submenu1-icon"></i>
+														
+														<div class="submenu submenu11">
+															<ul class="submenu-wrapper">
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Continuous Patient Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">High Acuity</a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">BeneVision N22/N19</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">BeneVision N17/N15/N12</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">BeneVision N1</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">BeneView TDS </a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">Mid/Low Acuity </a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">ePM Series</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">uMEC</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Transport Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+																	
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list  submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">BeneVision N1</a>
+																			</li>
+																			<li class="submenu-list submenu111-list  submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">ePM10</a>
+																			</li>
+																			<li class="submenu-list submenu111-list  submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">BeneView TDS</a>
+																			</li>
+																			<li class="submenu-list submenu111-list">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link no-border" >View All</a>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Telemetry Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">Menu 4</a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">Menu 5</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																			<li class="submenu-list submenu111-list">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link no-border" >View All</a>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Vital Sign Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">Menu 4</a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">Menu 5</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																			<li class="submenu-list submenu111-list">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link no-border" >View All</a>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Centralized Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">Menu 4</a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">Menu 5</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																			<li class="submenu-list submenu111-list">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link no-border" >View All</a>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Patient Monitoring Accessories</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link no-border" >View All</a>
+																</li>
+															</ul>
+														</div>
+													</li>
+													<li class="submenu-list submenu1-list has-icon submenu1-link1">
+														<a href="#" class="menu-tab-btn submenu-link submenu1-link">Patient Monitoring</a>
+														<i class="icon-arrow-right submenu1-icon"></i>
+														
+														<div class="submenu submenu11">
+															<ul class="submenu-wrapper">
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Continuous Patient Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">High Acuity</a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">BeneVision N22/N19</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">BeneVision N17/N15/N12</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">BeneVision N1</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">BeneView TDS </a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">Mid/Low Acuity </a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">ePM Series</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">uMEC</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Transport Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+																	
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list  submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">BeneVision N1</a>
+																			</li>
+																			<li class="submenu-list submenu111-list  submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">ePM10</a>
+																			</li>
+																			<li class="submenu-list submenu111-list  submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">BeneView TDS</a>
+																			</li>
+																			<li class="submenu-list submenu111-list">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link no-border" >View All</a>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Telemetry Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">Menu 4</a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">Menu 5</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																			<li class="submenu-list submenu111-list">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link no-border" >View All</a>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Vital Sign Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">Menu 4</a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">Menu 5</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																			<li class="submenu-list submenu111-list">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link no-border" >View All</a>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list has-icon submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Centralized Monitoring</a>
+																	<i class="icon-arrow-right submenu11-icon"></i>
+
+																	<div class="submenu submenu111">
+																		<ul class="submenu-wrapper">
+																			<li class="submenu-list submenu111-list has-icon submenu111-link1">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link">Menu 4</a>
+																				<i class="icon-arrow-right submenu111-icon"></i>
+																				
+																				<div class="submenu submenu1111">
+																					<ul class="submenu-wrapper">
+																						<li class="submenu-list submenu1111-list submenu1111-link1">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link">Menu 5</a>
+																						</li>
+																						<li class="submenu-list submenu1111-list">
+																							<a href="#" class="menu-tab-btn submenu-link submenu1111-link no-border" >View All</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</li>
+																			<li class="submenu-list submenu111-list">
+																				<a href="#" class="menu-tab-btn submenu-link submenu111-link no-border" >View All</a>
+																			</li>
+																		</ul>
+																	</div>
+
+																</li>
+																<li class="submenu-list submenu11-list submenu11-link1">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Patient Monitoring Accessories</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link no-border" >View All</a>
+																</li>
+															</ul>
+														</div>
+													</li>
+													<li class="submenu-list submenu1-list no-border submenu1-link1">
+														<a href="#" class="menu-tab-btn submenu-link submenu1-link">View All</a>
+													</li>
 												</ul>
 											</div>
 
@@ -341,6 +1034,114 @@
 										</li>
 										<li class="tab-title tab-solution">
 											<a href="#" class="menu-tab-btn tab-link">Community</a>
+
+											<div class="submenu submenu1">
+												<ul class="submenu-wrapper">
+													<li class="submenu-list submenu1-list has-icon submenu1-link1">
+														<a href="#" class="menu-tab-btn submenu-link submenu1-link">Hospitalwide Solution</a>
+														<i class="icon-arrow-right submenu1-icon"></i>
+
+														<div class="submenu submenu11">
+															<ul class="submenu-wrapper">
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">For ER</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">For ICU</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">For CCU</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">For OR</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">M-Connect IT Solution</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Cybersecurity</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Partnership</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link no-border" >View All</a>
+																</li>
+															</ul>
+														</div>
+													</li>
+													<li class="submenu-list submenu1-list">
+														<a href="#" class="menu-tab-btn submenu-link submenu1-link">Emergency Care</a>
+													</li>
+													<li class="submenu-list submenu1-list">
+														<a href="#" class="menu-tab-btn submenu-link submenu1-link">Critical Care</a>
+													</li>
+													<li class="submenu-list submenu1-list">
+														<a href="#" class="menu-tab-btn submenu-link submenu1-link">Perioperative Care</a>
+													</li>
+													<li class="submenu-list submenu1-list">
+														<a href="#" class="menu-tab-btn submenu-link submenu1-link">Minimally Inasive Surgery</a>
+													</li>
+													<li class="submenu-list submenu1-list has-icon submenu1-link2">
+														<a href="#" class="menu-tab-btn submenu-link submenu1-link" >Laboratory Diagonistics</a>
+														<i class="icon-arrow-right submenu1-icon"></i>
+
+														<div class="submenu submenu12">
+															<ul class="submenu-wrapper">
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Small Laboratories</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Large Volume Laboratories</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Large Volume Laboratories</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link no-border" >View All</a>
+																</li>
+															</ul>
+														</div>
+													</li>
+													<li class="submenu-list submenu1-list has-icon submenu1-link3">
+														<a href="#" class="menu-tab-btn submenu-link submenu1-link" >Medical Imaging</a>
+														<i class="icon-arrow-right submenu1-icon"></i>
+
+														<div class="submenu submenu13">
+															<ul class="submenu-wrapper">
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">General Imaging</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Women Health</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Cardiology</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Point of Care</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Primary Care</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">Liver Care</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link">MiCo+</a>
+																</li>
+																<li class="submenu-list submenu11-list">
+																	<a href="#" class="menu-tab-btn submenu-link submenu11-link no-border">View All</a>
+																</li>
+															</ul>
+														</div>
+													</li>
+													<li class="submenu-list submenu1-list submenu1-link2">
+														<a href="#" class="menu-tab-btn submenu-link submenu1-link no-border">View All</a>
+													</li>
+												</ul>
+											</div>
+
 										</li>
 									</ul>
 								</div>
@@ -366,6 +1167,89 @@
 				</div>
 			</div>
 		</section>
-		<section class="test"></section>
+
+		<!-- ======================Nav-Ends======================== -->
+		<!-- ======================Hero-Banner-Starts======================== -->
+
+		<!-- <section class="hero-banner swiper mySwiper">
+			<div class="swipper-wrapper">
+				<div class="banner-wrapper">
+					<div class="container">
+						<div class="texts">
+							<h1 class="banner-title">Clinically-smart Diagnosis with Confidance </h1>
+							<p class="banner-desc">CientíficaLab undertakes heavy clinical analysis workload with up to 2.82 million hematology tests annually. Aiming at improving operational efficiency with lower costs and delivering more reliable results, Mindray brought a customized automation solution including optimized workflow, smart analytics tools and advanced quality management based on the laboratory’s original layout.</p>
+							<a href="#" class="btn-dark">Explore More</a>
+						</div>
+					</div>
+				</div>
+				<div class="banner-wrapper">
+					<div class="container">
+						<div class="texts">
+							<h1 class="banner-title">Clinically-smart Diagnosis with Confidance </h1>
+							<p class="banner-desc">CientíficaLab undertakes heavy clinical analysis workload with up to 2.82 million hematology tests annually. Aiming at improving operational efficiency with lower costs and delivering more reliable results, Mindray brought a customized automation solution including optimized workflow, smart analytics tools and advanced quality management based on the laboratory’s original layout.</p>
+							<a href="#" class="btn-dark">Explore More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<section class="hero-banner">
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="banner-wrapper">
+							<div class="container">
+								<div class="texts">
+									<div class="banner-title">
+										<h1>Optimized Performance for Large Laboratories.</h1>
+									</div>
+									<p class="banner-desc">CientíficaLab undertakes heavy clinical analysis workload with up to 2.82 million hematology tests annually. Aiming at improving operational efficiency with lower costs and delivering more reliable results, Mindray brought a customized automation solution including optimized workflow, smart analytics tools and advanced quality management based on the laboratory’s original layout.</p>
+									<a href="#" class="btn-dark">Explore More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="banner-wrapper banner-2">
+							<div class="container">
+								<div class="texts">
+									<div class="banner-title">
+										<h1 class="banner-title">Optimized Performance for Large Laboratories.</h1>
+									</div>
+									<p class="banner-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum similique quaerat fugiat sint odio animi sed ab dolorem at cum beatae quia possimus exercitationem reiciendis numquam, dolores est natus eaque?</p>
+									<a href="#" class="btn-dark">Explore More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="banner-wrapper banner-3">
+							<div class="container">
+								<div class="texts">
+									<h1 class="banner-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, minima!</h1>
+									<p class="banner-desc">CientíficaLab undertakes heavy clinical analysis workload with up to 2.82 million hematology tests annually. Aiming at improving operational efficiency with lower costs and delivering more reliable results, Mindray brought a cus.</p>
+									<a href="#" class="btn-dark">Explore More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="banner-wrapper banner-3">
+							<div class="container">
+								<div class="texts">
+									<h1 class="banner-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, minima!</h1>
+									<p class="banner-desc">CientíficaLab undertakes heavy clinical analysis workload with up to 2.82 million hematology tests annually. Aiming at improving operational efficiency with lower costs and delivering more reliable results, Mindray brought a cus.</p>
+									<a href="#" class="btn-dark">Explore More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+
+		<script src="./assets/vendors/swiper/swiper-bundle.min.js"></script>
+		<script src="./assets/js/app.js"></script>
 	</body>
 </html>

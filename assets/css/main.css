@@ -52,7 +52,7 @@ a {
 
 body {
   position: relative;
-  background-color: rgb(129, 155, 179);
+  background-color: rgb(203, 230, 255);
 }
 
 .container {
@@ -77,6 +77,22 @@ body {
     width: 10rem;
   }
 }
+@-webkit-keyframes banner_title {
+  0% {
+    transform: translateY(15rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes banner_title {
+  0% {
+    transform: translateY(15rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .top-navbar-text {
   font-size: 1.6rem;
   color: #fff;
@@ -99,9 +115,15 @@ body {
 }
 
 .banner-title {
+  overflow: hidden;
+}
+.banner-title h1, .banner-title p {
   font-size: 7rem;
   color: #fff;
   line-height: 7.7rem;
+  font-weight: normal;
+  -webkit-animation: banner_title 1s ease-in-out;
+          animation: banner_title 1s ease-in-out;
 }
 
 .banner-desc {
@@ -230,6 +252,7 @@ body {
 section.nav {
   width: 100%;
   z-index: 100;
+  position: absolute;
 }
 section.nav .nav-topbar {
   padding-block: 1.5rem;
@@ -505,4 +528,91 @@ section.test {
 
 .no-border {
   border: none !important;
+}
+
+section.hero-banner .swiper {
+  height: 102rem;
+  width: 100%;
+}
+section.hero-banner .swiper .swiper-wrapper .swiper-slide .banner-wrapper {
+  position: relative;
+  background-image: url(../img/banners/banner1.jpg);
+  height: inherit;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+section.hero-banner .swiper .swiper-wrapper .swiper-slide .banner-wrapper .container {
+  position: relative;
+}
+section.hero-banner .swiper .swiper-wrapper .swiper-slide .banner-wrapper .container .texts {
+  width: 60%;
+  position: absolute;
+  top: 25rem;
+  height: inherit;
+  z-index: 10;
+}
+section.hero-banner .swiper .swiper-wrapper .swiper-slide .banner-wrapper .container .texts .banner-title {
+  margin-bottom: 3rem;
+}
+section.hero-banner .swiper .swiper-wrapper .swiper-slide .banner-wrapper .container .texts .banner-desc {
+  margin-bottom: 6rem;
+}
+section.hero-banner .swiper .swiper-wrapper .swiper-slide .banner-wrapper .container .texts .btn-dark {
+  margin-top: 4rem;
+}
+section.hero-banner .swiper .swiper-wrapper .swiper-slide .banner-2 {
+  background-image: url(../img/banners/banner2.jpg);
+}
+section.hero-banner .swiper .swiper-wrapper .swiper-slide .banner-3 {
+  background-image: url(../img/banners/banner3.jpg);
+}
+section.hero-banner .swiper::before {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10rem;
+  width: 54rem;
+  height: 22rem;
+  border-radius: 0 20rem 0 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active-next,
+.swiper-pagination-bullet-active-next-next,
+.swiper-pagination-bullet-active-prev,
+.swiper-pagination-bullet-active-prev-prev {
+  height: unset;
+  width: unset;
+  transform: unset;
+  background-color: #fff;
+  height: 0.25rem;
+  width: 15%;
+  border-radius: unset;
+  opacity: 1 !important;
+  position: unset !important;
+  border-radius: 1rem;
+  transform-origin: center;
+  transition: all 0.7s ease-in-out !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #c4161c;
+  width: 40%;
+  border-radius: unset;
+  transition: all 0.7s ease-in-out !important;
+  transform-origin: center;
+}
+
+.swiper-pagination-bullets-dynamic {
+  position: absolute;
+  display: flex !important;
+  width: 70rem !important;
+  align-items: center;
+  justify-content: space-between !important;
+  margin-bottom: 10rem;
 }/*# sourceMappingURL=main.css.map */
