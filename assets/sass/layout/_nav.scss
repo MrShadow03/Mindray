@@ -32,6 +32,7 @@ section.nav {
 			}
 		}
 	}
+
 	.nav-main {
 		height: 8rem;
 		display: flex;
@@ -115,7 +116,7 @@ section.nav {
 										overflow-y: auto;
 										&::scrollbar {
 											width: 4rem;
-										  }
+										}
 										.submenu-wrapper {
 											padding: 2rem 0 2.3rem 0;
 											.submenu-list {
@@ -183,29 +184,29 @@ section.nav {
 													}
 												}
 											}
-											.submenu11-list:hover{
-												.submenu11-link{
+											.submenu11-list:hover {
+												.submenu11-link {
 													color: $red;
 												}
-												.submenu11-icon{
-													color: $red;
-													opacity: 1;
-												}
-											}
-											.submenu111-list:hover{
-												.submenu111-link{
-													color: $red;
-												}
-												.submenu111-icon{
+												.submenu11-icon {
 													color: $red;
 													opacity: 1;
 												}
 											}
-											.submenu1111-list:hover{
-												.submenu1111-link{
+											.submenu111-list:hover {
+												.submenu111-link {
 													color: $red;
 												}
-												.submenu1111-icon{
+												.submenu111-icon {
+													color: $red;
+													opacity: 1;
+												}
+											}
+											.submenu1111-list:hover {
+												.submenu1111-link {
+													color: $red;
+												}
+												.submenu1111-icon {
 													color: $red;
 													opacity: 1;
 												}
@@ -217,18 +218,18 @@ section.nav {
 
 										//for webkit browsers
 
-										&::-webkit-scrollbar{
-											width: .4rem;
+										&::-webkit-scrollbar {
+											width: 0.4rem;
 											border-radius: 3rem;
-										  }
-										&::-webkit-scrollbar-thumb{
+										}
+										&::-webkit-scrollbar-thumb {
 											background-color: $text-white-darker;
-										  }
-										&::-webkit-scrollbar-track{
+										}
+										&::-webkit-scrollbar-track {
 											background-color: $white;
-										  }
+										}
 									}
-									
+
 									.submenu1 {
 										top: 8rem;
 										left: 7rem;
@@ -247,12 +248,14 @@ section.nav {
 											}
 										}
 									}
-									.submenu11,.submenu12,.submenu13 {
+									.submenu11,
+									.submenu12,
+									.submenu13 {
 										top: 8rem;
 										left: 40rem;
 										@include displayNone;
 									}
-									
+
 									.submenu111 {
 										top: 8rem;
 										left: 73rem;

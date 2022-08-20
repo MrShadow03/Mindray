@@ -1,112 +1,118 @@
-@keyframes banner_title{
-    0%{
-        transform: translateY(15rem);
-    }
-    100%{
-        transform: translateY(0);
-    }
+@keyframes banner_title {
+	0% {
+		transform: translateY(15rem);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
-.top-navbar-text{
-    font-size: 1.6rem;
-    color: $white;
+.top-navbar-text {
+	font-size: 1.6rem;
+	color: $white;
 }
-.nav-menu-link{
-    font-size: 1.8rem;
-    color: $white;
-    font-weight: 600;
+.nav-menu-link {
+	font-size: 1.8rem;
+	color: $white;
+	font-weight: 600;
 }
-.nav-icon{
-    color: $white;
-    font-size: 1.8rem;
+.nav-icon {
+	color: $white;
+	font-size: 1.8rem;
 }
-.menu-tab-btn{
-    font-size: 1.8rem;
-    color: $white;
+.menu-tab-btn {
+	font-size: 1.8rem;
+	color: $white;
 }
-.banner-title{
-    overflow: hidden;
-    h1,p{
-        font-size: 7rem;
-        color: $white;
-        line-height: 7.7rem;
-        font-weight: normal;
-        animation: banner_title 1s ease-in-out;
-    }
+.banner-title {
+	font-size: 7rem;
+	color: $white;
+	line-height: 7.7rem;
+	font-weight: normal;
 }
-.banner-desc{
-    font-size: 2.2rem;
-    color: $white;
-    line-height: 3.6rem;
+.banner-desc {
+	font-size: 2.2rem;
+	color: $white;
+	line-height: 3.6rem;
 }
-.text-title-lg{
-    font-size: 5.6rem;
-    color: $text-dark;
-    line-height: 6.2rem;
-    font-weight: 700;
-    position: relative;
-    &::before{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: -1rem;
-        height: 1rem;
-        width: 10rem;
-        z-index: -1;
-        background-color: $red-dark;
-        animation: titlebar .5s ease-in-out;
-    }
+.text-title-lg {
+	font-size: 5.6rem;
+	color: $text-dark;
+	line-height: 6.2rem;
+	font-weight: 700;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: -1rem;
+		height: 1rem;
+		width: 10rem;
+		z-index: -1;
+		background-color: $red-dark;
+		animation: titlebar 0.5s ease-in-out;
+	}
 }
-.text-desc{
-    font-size: 2.2rem;
-    color: $text-light;
-    line-height: 3.6rem;
-    position: relative;
+.text-desc {
+	font-size: 2.2rem;
+	color: $text-light;
+	line-height: 3.6rem;
+	position: relative;
 }
-.text-title-sm{
-    font-size: 2.4rem;
-    color: $text-dark;
-    font-weight: 700;
-    margin-bottom: 2rem;
+.text-title-sm {
+	font-size: 2.4rem;
+	color: $text-dark;
+	font-weight: 700;
+	margin-bottom: 2rem;
 }
-.text-content-title{
-    font-size: 2.4rem;
-    color: $text-dark;
-    line-height: 3.9rem;
-    font-weight: 600;
+.text-content-title {
+	font-size: 2.4rem;
+	color: $text-dark;
+	line-height: 3.9rem;
+	font-weight: 600;
 }
-.text-content-type{
-    font-size: 1.4rem;
-    color: $red-btn;
+.text-content-type {
+	font-size: 1.4rem;
+	color: $red-btn;
 }
-.text-content-date{
-    font-size: 1.4rem;
-    color: $text-date;
+.text-content-date {
+	font-size: 1.4rem;
+	color: $text-date;
 }
-.text-footer-menu-title{
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: $text-white-dark;
+.text-footer-menu-title {
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: $text-white-dark;
 }
-.text-footer-menu-link{
-    font-size: 1.6rem;
-    color: $text-white-dark;
+.text-footer-menu-link {
+	font-size: 1.6rem;
+	color: $text-white-dark;
 }
-.text-footer-title{
-    font-size: 1.8rem;
-    color: $text-white-darker;
+.text-footer-title {
+	font-size: 1.8rem;
+	color: $text-white-darker;
 }
-.text-footer-link{
-    font-size: 1.4rem;
-    color: $text-white-darker;
+.text-footer-link {
+	font-size: 1.4rem;
+	color: $text-white-darker;
 }
 
-
-
-
-
-.bg-dark{
-    background-color: $gray-darker;
+.bg-dark {
+	background-color: $gray-darker;
 }
-.w-40{
-    width: 40%;
+.w-40 {
+	width: 40%;
+}
+
+.anime-overflow-hidden {
+	overflow: hidden;
+}
+.anime-translate-outside {
+	transform: translateY(20rem);
+	transition: all 0.25s ease-in-out;
+}
+// .anime-translate-inside {
+// 	transform: translateY(0);
+// }
+.mb {
+	margin-bottom: 6rem;
 }
