@@ -191,4 +191,27 @@ const observer4 = new IntersectionObserver(
 	}
 	);
 	observer4.observe(observer_4);
-		
+	
+
+	//product swipe btn
+
+	let swipe_btn = document.querySelector("#swipe-btn");
+	let product_gallery = document.querySelector(".product-gallery-wrapper");
+	let swipe_arrow = document.querySelector("#swipe-arrow");
+	let overlay_divs = document.querySelectorAll(".has-overlay");
+
+	swipe_btn.addEventListener("click",function(){
+		product_gallery.classList.toggle("gallery-slide");
+
+		if(swipe_arrow.classList.contains("icon-arrow-right")){
+			swipe_arrow.classList.remove("icon-arrow-right");
+			swipe_arrow.classList.add("icon-arrow-left");
+		}else{
+			swipe_arrow.classList.remove("icon-arrow-left");
+            swipe_arrow.classList.add("icon-arrow-right");
+		}
+
+		overlay_divs.forEach(element => {
+			element.classList.toggle("overlay");
+		});
+	})
