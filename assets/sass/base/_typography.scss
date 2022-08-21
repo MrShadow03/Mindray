@@ -40,6 +40,7 @@
 	line-height: 6.2rem;
 	font-weight: 700;
 	position: relative;
+	margin-bottom: 3rem;
 	&::before {
 		content: "";
 		position: absolute;
@@ -107,10 +108,9 @@
 	overflow: hidden;
 }
 .anime-translate-outside {
-	transform: translateY(20rem);
-	transition: all 0.25s ease-in-out;
+	transition: all 0.35s ease-in-out;
 }
-// .anime-translate-inside {
+// .anime-translate-insid
 // 	transform: translateY(0);
 // }
 .mb {

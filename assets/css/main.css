@@ -133,6 +133,7 @@ body {
   line-height: 6.2rem;
   font-weight: 700;
   position: relative;
+  margin-bottom: 3rem;
 }
 .text-title-lg::before {
   content: "";
@@ -212,8 +213,7 @@ body {
 }
 
 .anime-translate-outside {
-  transform: translateY(20rem);
-  transition: all 0.25s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 .mb {
@@ -569,11 +569,23 @@ section.hero-banner .swiper .swiper-wrapper .swiper-slide .banner-wrapper .conta
 section.hero-banner .swiper .swiper-wrapper .swiper-slide .banner-wrapper .container .texts .btn-dark {
   margin-top: 4rem;
 }
+section.hero-banner .swiper .swiper-wrapper .swiper-slide .banner-wrapper .observer {
+  position: absolute;
+  width: 80%;
+  height: 3%;
+  top: 20%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+}
 section.hero-banner .swiper .swiper-wrapper .swiper-slide .banner-2 {
   background-image: url(../img/banners/banner2.jpg);
 }
 section.hero-banner .swiper .swiper-wrapper .swiper-slide .banner-3 {
   background-image: url(../img/banners/banner3.jpg);
+}
+section.hero-banner .swiper .swiper-wrapper .swiper-slide .banner-4 {
+  background-image: url(../img/banners/banner4.jpg);
 }
 section.hero-banner .swiper::before {
   z-index: 2;

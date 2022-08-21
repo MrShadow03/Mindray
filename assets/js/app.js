@@ -59,7 +59,7 @@ large_tab_btn.addEventListener("mouseout", () => {
 //swiper js codes
 
 var swiper = new Swiper(".mySwiper", {
-	loop: true,
+	loop: false,
 	speed: 1000,
 	autoplay: {
 		delay: 2500,
@@ -75,8 +75,18 @@ var swiper = new Swiper(".mySwiper", {
 //Intersection observer
 
 let overflow_div = document.querySelectorAll(".anime-overflow-hidden");
-let slide_div = document.querySelectorAll(".anime-translate-outside");
+//let slide_div = document.querySelectorAll(".anime-translate-outside");
+let slide_div1 = document.querySelectorAll(".slide1");
+let slide_div2 = document.querySelectorAll(".slide2");
+let slide_div3 = document.querySelectorAll(".slide3");
+let slide_div4 = document.querySelectorAll(".slide4");
 let slides = document.querySelectorAll(".swiper-slide");
+let observer_div = document.querySelectorAll(".observer");
+
+let observer_1 = document.querySelector(".observer1");
+let observer_2 = document.querySelector(".observer2");
+let observer_3 = document.querySelector(".observer3");
+let observer_4 = document.querySelector(".observer4");
 
 // overflow_div.forEach((element) => {
 // 	element.addEventListener("mouseenter", function () {
@@ -87,24 +97,98 @@ let slides = document.querySelectorAll(".swiper-slide");
 // 	});
 // });
 
-const observer = new IntersectionObserver(
+// const observer = new IntersectionObserver(
+// 	(entries) => {
+// 		entries.forEach((entry) => {
+// 			slide_div.forEach((element) => {
+// 				if (entry.isIntersecting) {
+// 					element.style.transform = "translateY(0)";
+// 				} else {
+// 					element.style.transform = "translateY(20rem)";
+// 				}
+// 			});
+// 		});
+// 	},
+// 	{
+// 	}
+// );
+
+// observer_div.forEach((element) => {
+// 	observer.observe(element);
+// });
+
+const observer1 = new IntersectionObserver(
 	(entries) => {
 		entries.forEach((entry) => {
-			slide_div.forEach((element) => {
+			slide_div1.forEach((element) => {
+				console.log(entry)
 				if (entry.isIntersecting) {
-					console.log(entry.target);
 					element.style.transform = "translateY(0)";
 				} else {
 					element.style.transform = "translateY(20rem)";
 				}
 			});
 		});
-	},
-	{
-		threshold: 0.9,
+	},{
+		threshold: 1,
 	}
-);
+	);
+	observer1.observe(observer_1);
 
-slides.forEach((element) => {
-	observer.observe(element);
-});
+const observer2 = new IntersectionObserver(
+	(entries) => {
+		entries.forEach((entry) => {
+			slide_div2.forEach((element) => {
+				console.log(entry)
+				if (entry.isIntersecting) {
+					element.style.transform = "translateY(0)";
+				} else {
+					element.style.transform = "translateY(20rem)";
+				}
+			});
+		});
+	},{
+		threshold: 1,
+	}
+	);
+	observer2.observe(observer_2);
+
+const observer3 = new IntersectionObserver(
+	(entries) => {
+		entries.forEach((entry) => {
+			slide_div3.forEach((element) => {
+				if (entry.isIntersecting) {
+					element.style.transform = "translateY(0)";
+				} else {
+					element.style.transform = "translateY(20rem)";
+				}
+			});
+		});
+	},{
+		threshold: 1,
+	}
+	);
+	observer3.observe(observer_3);
+
+
+
+
+
+
+const observer4 = new IntersectionObserver(
+	(entries) => {
+		entries.forEach((entry) => {
+			slide_div4.forEach((element) => {
+				if (entry.isIntersecting) {
+					element.style.transform = "translateY(0)";
+				} else {
+					element.style.transform = "translateY(20rem)";
+				}
+			});
+		});
+	},{
+		threshold: 1,
+	}
+	);
+	observer4.observe(observer_4);
+		
