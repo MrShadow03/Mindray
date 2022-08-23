@@ -1,0 +1,78 @@
+section.blog{
+    padding-block: 10rem;
+    width: 100%;
+    overflow: hidden;
+    .container{
+        display: flex;
+        position: relative;
+        .blog-banner{
+            width: 66%;
+            padding-top: 15rem;
+            .backgrounds{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: $bg-light;
+                top: -3rem;
+                left: -18rem;
+                z-index: -1;
+                width: 55%;
+                height: 55rem;
+                border-radius: 0 20rem 0 0;
+                &::before{
+                    content:"";
+                    width: 45%;
+                    height: 60%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: $bg-lighter;
+                }
+            }
+            .webinar{
+                position: relative;
+                .webinar-img{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .webinar-desc{
+                    background-color: $white;
+                    position: absolute;
+                    top: 95%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    width: 67%;     
+                    padding-block: 3.5rem;
+                    padding-left: 14rem;
+                    padding-right: 8rem;
+                    border: 0.1rem solid $text-white-darker;
+                    &::before{
+                        content:"";
+                        width: 35%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        right: 85%;
+                        background-color: rgb(12, 12, 12);
+                        border-radius: 15rem 0 0 0;
+                    }
+                     .text-content-date{
+                        margin-bottom: 2rem;
+                     }   
+                 }
+            }
+        }
+        .blog-listing{
+            background-color: cornflowerblue;
+            width: 34%;
+        }
+    }
+}
+.test{
+    height: 100px;
+    width: 100px;
+    background: orange;
+    padding-block: 10rem;
+    margin-block: 10rem;
+}

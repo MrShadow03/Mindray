@@ -78,6 +78,8 @@
 .text-content-date {
 	font-size: 1.4rem;
 	color: $text-date;
+	padding: 0 1rem;
+	border-left: 0.1rem solid $text-dark;
 }
 .text-footer-menu-title {
 	font-size: 1.8rem;

@@ -7,6 +7,7 @@ section.product{
     .section-info{
         padding-left: 17rem;
         width: 24%;
+        padding-top: 3rem;
     }
     .anime-overflow-hidden{
         width: 70%;
@@ -81,11 +82,7 @@ section.product{
                             width: 39.3rem;
                             transition: all .5s ease-in-out;
                         }
-                        &:hover{
-                            img{
-                                transform: scale(1.05);
-                            }
-                        }
+                        
                     }
                     .product-info{
                         padding: 3rem;
@@ -105,6 +102,13 @@ section.product{
                             background-color: $red;
                             z-index: -1;
                             transition: all .5s ease-in-out;
+                        }
+                    }
+                    &:hover{
+                        .product-image-wrapper{
+                            img{
+                                transform: scale(1.05);
+                            }
                         }
                     }
                 }

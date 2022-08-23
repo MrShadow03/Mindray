@@ -133,6 +133,7 @@ const observer1 = new IntersectionObserver(
 		threshold: 1,
 	}
 	);
+
 	observer1.observe(observer_1);
 
 const observer2 = new IntersectionObserver(
@@ -214,4 +215,21 @@ const observer4 = new IntersectionObserver(
 		overlay_divs.forEach(element => {
 			element.classList.toggle("overlay");
 		});
-	})
+	});
+
+	let test = document.querySelector("#test1");
+	const testObserve = new IntersectionObserver(
+		(entries) => {
+			entries.forEach((entry) =>{
+				console.log(entry)
+				if(entry.isIntersecting){
+					entry.target.style.backgroundColor = "red";
+				}else{
+					entry.target.style.backgroundColor = "orange";
+				}
+			})
+		},{
+			threshold: .5,
+		});
+
+		testObserve.observe(test);
