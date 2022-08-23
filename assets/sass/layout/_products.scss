@@ -31,6 +31,9 @@ section.product{
                         }
                     }
                     .product-info{
+                        p{
+                            transition: all .5s ease-in-out;
+                        }
                         width: 18rem;
                         padding: 2rem;
                         position: relative;
@@ -85,6 +88,9 @@ section.product{
                         
                     }
                     .product-info{
+                        p{
+                            transition: all .5s ease-in-out;
+                        }
                         padding: 3rem;
                         background-color: $text-white-dark;
                         position: relative;
