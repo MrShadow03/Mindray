@@ -1,0 +1,184 @@
+section.blog{
+    padding-block: 10rem;
+    width: 100%;
+    overflow: hidden;
+    .container{
+        display: flex;
+        position: relative;
+        .blog-banner{
+            width: 66%;
+            padding-top: 15rem;
+            .backgrounds{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: $bg-light;
+                top: -3rem;
+                left: -18rem;
+                z-index: -1;
+                width: 55%;
+                height: 55rem;
+                border-radius: 0 20rem 0 0;
+                &::before{
+                    content:"";
+                    width: 45%;
+                    height: 60%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: $bg-lighter;
+                }
+            }
+            .webinar{
+                position: relative;
+                .webinar-img{
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        transition: all .5s ease-in-out;
+                    }
+                }
+                .webinar-desc{
+                    background-color: $white;
+                    position: absolute;
+                    top: 95%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    width: 67%;     
+                    padding-block: 3.5rem;
+                    padding-left: 14rem;
+                    padding-right: 8rem;
+                    border-right: 0.1rem solid $text-white-darker;
+                    border-bottom: 0.1rem solid $text-white-darker;
+                    &::before{
+                        content:"";
+                        width: 35%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        right: 85%;
+                        background: rgb(210,10,10);
+                        background: linear-gradient(356deg, rgba(173,9,9,1) 0%, rgba(210,10,10,1) 100%);
+                        border-radius: 15rem 0 0 0;
+                    }
+                    &::after{
+                        content:"";
+                        width: 16%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: linear-gradient(356deg, rgba(210,10,10,1) 0%, rgba(173,9,9,1) 100%);
+                        z-index: 100;
+                    }
+                    p{
+                        transition: all .5s ease-in-out;
+                    }
+                     .text-content-date{
+                        margin-bottom: 2rem;
+                        &::before{
+                            content:"";
+                            width: 15%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            background-color: $red;
+                            transition: all .5s ease-in-out;
+                            z-index: -1;
+                        }
+                     }   
+                 }
+                 &:hover{
+                    .webinar-img{
+                        img{
+                            transform: scale(1.05);
+                        }
+                    }
+                    .webinar-desc{
+                        p{
+                            color: $white;
+                        }
+                        .text-content-date::before{
+                            width: 100%;
+                        }
+                    }
+                 }
+            }
+        }
+        .blog-listing{
+            width: 34%;
+            .blog-lists{
+                overflow: auto;
+                height: 66rem;
+                margin-top: 2.5rem;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                .blog-img{
+                    overflow: hidden;
+                    width: 100%;
+                    height: 10rem;
+                    .img-wrapper{
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            @include imgScaling;
+                        }
+                    }
+                    &:hover{
+                        img{
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+                .blog-list{
+                    width: 100%;
+                    .details-wrapper{
+                        padding: 2rem 4rem;
+                        width: 100%;
+                        text-overflow: ellipsis;
+                        border-bottom: .2rem solid $text-white-dark;
+                        .blog-details{
+                            padding-bottom: 2rem;
+                            display: flex;
+                            .text-content-date{
+                                margin-left: 1rem;
+                            }
+                        }
+                        .text-content-title{
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                    &:hover{
+                        .details-wrapper{
+                            .text-content-title{
+                                color: $red;
+                            }
+                        }
+                    }
+                }
+                .btn-group{
+                    display: flex;
+                    gap: 5rem;
+                    margin-left: 4rem;
+                    padding-bottom: 4rem;
+                }
+            }
+        }
+    }
+}
+.test{
+    height: 100px;
+    width: 100px;
+    background: orange;
+    padding-block: 10rem;
+    margin-block: 10rem;
+}
+.ml-4{
+    margin-left: 4rem;
+}

@@ -1,286 +1,346 @@
-section.nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    .nav-topbar{
-        padding-block: 1.6rem;
-        border-bottom: 1px solid $white-border;
-        &:hover{
-            background-color: $red;
-        }
-        .container{
-            display: flex;
-            justify-content: flex-end;
-            .topbar-links{
-                display: flex;
-                .top-navbar-text{
-                    border-right: 0.1rem solid $white;
-                    padding-inline: 3.6rem;
-                }
-                .language{
-                    padding-right: unset;
-                    border: unset;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    i{
-                        margin-right: 2rem;
-                        font-weight: 300;
-                        font-size: 2rem;
-                    }
-                }
-            }
-        }
-    }
-    .nav-main{
-        height: 8rem;
-        display: flex;
-        align-items: center;
-        .container{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: inherit; 
-            .nav-left{
-                height: inherit;
-                display: flex;
-                align-items: center;
-                .logo{
-                    aspect-ratio: 1644/410;
-                    height: 3rem;
-                    background-image: url(./../img/logo_white.png);
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                }
-                .nav-links{
-                    display: flex;
-                    align-items: center;
-                    margin-left: 14rem;
-                    height: inherit;
-                    z-index: 10;
-                    li.main-menu-link-list{
-                        height: inherit;
-                        display: flex;
-                        align-items: center;
-                        padding-inline: 3rem;
-                        position: relative;
-                        &::before{
-                            content: "";
-                            position: absolute;
-                            bottom: 0;
-                            left: 0;
-                            width: 100%;
-                            height: .2rem;
-                            background-color: $red;
-                            opacity: 0;
-                        }
-                        &:hover::before{
-                            opacity: 1;
-                        }
-                    }
-                    .product-list{
-                        position: relative;
-                        .main-tab-title{
-                            @include displayNone;
-                            position: absolute;
-                            min-width: 34rem;
-                            background: #fff;
-                            top: 8rem;
-                            left: -26rem;
-                            //min-height: 48.7rem;
-                            min-height: 100vh;
-                            .tab-wrapper{
-                                margin-top: 7rem;
-                                li.tab-title{
-                                    position: relative;
-                                    padding-block: 3rem;
-                                    margin-bottom: 2rem;
-                                    a.tab-link{
-                                        color: $text-dark;
-                                        margin-left: 4rem;
-                                    }
-                                    &:hover{
-                                        background-color: $red;
-                                        a.tab-link{
-                                            color: $white;
-                                        }
-                                    }
-                                    .submenu{
-                                        @include displayNone;
-                                        position: absolute;
-                                        left:34rem;
-                                        top: -7rem;
-                                        background-color: $white;
-                                        min-width: 40rem;
-                                        border-left: 0.1rem solid $text-white-darker;
-                                        .submenu-wrapper{
-                                            padding: 2rem 0 2.3rem 0;
-                                            .submenu-list{
-                                                a.submenu-link{
-                                                    border-bottom: 0.1rem solid $text-white-darker;
-                                                    width: 80%;
-                                                    margin: 0 auto;
-                                                    color: $text-dark;
-                                                    display: block;
-                                                    padding-block: 1.64rem;
-                                                }
-                                                .icon-arrow-right{
-                                                    font-size: 1.1rem;
-                                                    font-weight: 600;
-                                                    opacity: .4;
-                                                }
-                                                &:hover{
-                                                    a.submenu-link{
-                                                        color: $red;
-                                                    }
-                                                    .icon-arrow-right{
-                                                        color: $red;
-                                                        opacity: 1;
-                                                    }
-                                                }
-                                            }
-                                            .has-icon{
-                                                position: relative;
-                                                .icon-arrow-right{
-                                                    position: absolute;
-                                                    top: 50%;
-                                                    right: 4rem;
-                                                    transform: translateY(-50%);
-                                                }
-                                                .submenu2{
-                                                    position: absolute;
-                                                    left: 39rem;
-                                                    top: -2rem;
-                                                    background-color: $white;
-                                                    min-width: 40rem;
-                                                    border-left: 0.1rem solid $text-white-darker;
-                                                    @include displayNone;
-                                                    .submenu2-wrapper{
-                                                        padding: 2rem 0 2.3rem 0;
-                                                        .submenu2-list{
-                                                            a.submenu2-link{
-                                                                border-bottom: 0.1rem solid $text-white-darker;
-                                                                width: 80%;
-                                                                margin: 0 auto;
-                                                                color: $text-dark;
-                                                                display: block;
-                                                                padding-block: 1.64rem;
-                                                                &:hover{
-                                                                    color: $red;
-                                                                }
-                                                                &:hover+.icon-arrow-right{
-                                                                    color: $red;
-                                                                    opacity: 1;
-                                                                }
-                                                            }
-                                                            .icon-arrow-right{
-                                                                font-size: 1.1rem;
-                                                                font-weight: 600;
-                                                                opacity: .4;
-                                                            }
-                                                        }
-                                                        .has-icon{
-                                                            position: relative;
-                                                            .icon-arrow-right{
-                                                                position: absolute;
-                                                                top: 50%;
-                                                                right: 4rem;
-                                                                transform: translateY(-50%);
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                                .imaging{
-                                                    @include displayNone;
-                                                    top: -35.5rem;
-                                                }
-                                                
-                                            }
-                                            .submenu-one{
-                                                &:hover{
-                                                    .submenu2{
-                                                        display: block;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                .tab-solution{
-                                    &:hover{
-                                        .submenu{
-                                            display: block;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        &:hover{
-                            .main-tab-title{
-                                display: block;
-                            }
-                        }
-                    }
-                }
-            }
-            .nav-right{
-                display: flex;
-                align-items: center;
-                gap: 6rem;
-                a{
-                    i{
-                        font-size: 2rem;
-                    }
-                }
-            }
-        }
-    }
+section.nav {
+	width: 100%;
+	z-index: 100;
+	position: absolute;
+	.nav-topbar {
+		padding-block: 1.5rem;
+		border-bottom: 0.1rem solid $white-border;
+		&:hover {
+			background-color: $red;
+		}
+		.container {
+			display: flex;
+			justify-content: flex-end;
+			.topbar-links {
+				display: flex;
+				.top-navbar-text {
+					border-right: 0.1rem solid $white;
+					padding-inline: 3.6rem;
+				}
+				.language {
+					padding-right: unset;
+					border: unset;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					i {
+						margin-right: 2rem;
+						font-weight: 300;
+						font-size: 2rem;
+					}
+				}
+			}
+		}
+	}
 
-    //==================when hovered===================
+	.nav-main {
+		height: 8rem;
+		display: flex;
+		align-items: center;
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: inherit;
+			.nav-left {
+				height: inherit;
+				display: flex;
+				align-items: center;
+				.logo {
+					aspect-ratio: 1644/410;
+					height: 3rem;
+					background-image: url(./../img/logo_white.png);
+					background-size: contain;
+					background-repeat: no-repeat;
+				}
+				.nav-links {
+					display: flex;
+					align-items: center;
+					margin-left: 14rem;
+					height: inherit;
+					z-index: 10;
+					li.main-menu-link-list {
+						height: inherit;
+						display: flex;
+						align-items: center;
+						padding-inline: 3rem;
+						position: relative;
+						&::before {
+							content: "";
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							width: 100%;
+							height: 0.2rem;
+							background-color: $red;
+							opacity: 0;
+						}
+						&:hover::before {
+							opacity: 1;
+						}
+					}
+					.product-list {
+						position: relative;
+						transform: rotate(0deg);
+						.main-tab-title {
+							@include displayNone;
+							position: fixed;
+							min-width: 33rem;
+							background: #fff;
+							top: 8rem;
+							left: -26rem;
+							@include dropdownHeight;
+							.tab-wrapper {
+								margin-top: 7rem;
+								li.tab-title {
+									position: relative;
+									padding-block: 3rem;
+									margin-bottom: 2rem;
+									a.tab-link {
+										color: $text-dark;
+										margin-left: 4rem;
+									}
+									&:hover {
+										background-color: $red;
+										a.tab-link {
+											color: $white;
+										}
+									}
+									.submenu {
+										@include dropdownHeight;
+										@include displayNone;
+										position: fixed;
+										background-color: $white;
+										min-width: 33rem;
+										border-left: 0.1rem solid $text-white-darker;
+										overflow-y: auto;
+										&::scrollbar {
+											width: 4rem;
+										}
+										.submenu-wrapper {
+											padding: 2rem 0 2.3rem 0;
+											.submenu-list {
+												a.submenu-link {
+													border-bottom: 0.1rem solid $text-white-darker;
+													width: 80%;
+													margin: 0 auto;
+													color: $text-dark;
+													display: block;
+													padding-block: 1.64rem;
+												}
+												.icon-arrow-right {
+													font-size: 1.1rem;
+													font-weight: 600;
+													opacity: 0.4;
+												}
+											}
+											.has-icon {
+												position: relative;
+												.icon-arrow-right {
+													position: absolute;
+													top: 50%;
+													right: 4rem;
+													transform: translateY(-50%);
+												}
+											}
+											//submenu1-Solutions = >
+											.submenu1-link1 {
+												&:hover {
+													.submenu11 {
+														display: block;
+													}
+												}
+											}
+											.submenu1-link2 {
+												&:hover {
+													.submenu12 {
+														display: block;
+													}
+												}
+											}
+											.submenu1-link3 {
+												position: relative;
+												&:hover {
+													.submenu13 {
+														display: block;
+													}
+												}
+											}
+											//submenu = > >
+											.submenu11-link1 {
+												position: relative;
+												&:hover {
+													.submenu111 {
+														display: block;
+													}
+												}
+											}
+											//submenu = > > >
+											.submenu111-link1 {
+												position: relative;
+												&:hover {
+													.submenu1111 {
+														display: block;
+													}
+												}
+											}
+											.submenu11-list:hover {
+												.submenu11-link {
+													color: $red;
+												}
+												.submenu11-icon {
+													color: $red;
+													opacity: 1;
+												}
+											}
+											.submenu111-list:hover {
+												.submenu111-link {
+													color: $red;
+												}
+												.submenu111-icon {
+													color: $red;
+													opacity: 1;
+												}
+											}
+											.submenu1111-list:hover {
+												.submenu1111-link {
+													color: $red;
+												}
+												.submenu1111-icon {
+													color: $red;
+													opacity: 1;
+												}
+											}
+										}
+										//for firefox
+										scrollbar-width: thin;
+										scrollbar-color: $text-white-darker $white;
 
-    &:hover{
-        .nav-topbar{
-            background-color: $red;
-        }
-        .nav-main{
-            background-color: $white;
-            .container{
-                .nav-left{
-                    .logo{
-                        background-image: url(./../img/logo_red.png);
-                    }
-                    .nav-links{
-                        li{
-                            a{
-                                color: $text-dark;
-                            }
-                        }
-                    }
-                }
-                .nav-right{
-                    a{
-                        i{
-                            color: $text-dark;
-                        }
-                    }
-                }
-            }
-        }
-    }
+										//for webkit browsers
+
+										&::-webkit-scrollbar {
+											width: 0.4rem;
+											border-radius: 3rem;
+										}
+										&::-webkit-scrollbar-thumb {
+											background-color: $text-white-darker;
+										}
+										&::-webkit-scrollbar-track {
+											background-color: $white;
+										}
+									}
+
+									.submenu1 {
+										top: 8rem;
+										left: 7rem;
+										.submenu-wrapper {
+											.submenu-list {
+												position: relative;
+											}
+											.submenu1-list:hover {
+												.submenu1-link {
+													color: $red;
+												}
+												.submenu1-icon {
+													color: $red;
+													opacity: 1;
+												}
+											}
+										}
+									}
+									.submenu11,
+									.submenu12,
+									.submenu13 {
+										top: 8rem;
+										left: 40rem;
+										@include displayNone;
+									}
+
+									.submenu111 {
+										top: 8rem;
+										left: 73rem;
+										@include displayNone;
+									}
+									.submenu1111 {
+										top: 8rem;
+										left: 106rem;
+										@include displayNone;
+									}
+								}
+								.tab-solution {
+									&:hover {
+										.submenu1 {
+											display: block;
+										}
+									}
+								}
+								.tab-products {
+									&:hover {
+										.submenu2 {
+											display: block;
+										}
+									}
+								}
+							}
+						}
+						&:hover {
+							.main-tab-title {
+								display: block;
+							}
+						}
+					}
+				}
+			}
+			.nav-right {
+				display: flex;
+				align-items: center;
+				gap: 6rem;
+				a {
+					i {
+						font-size: 2rem;
+					}
+				}
+			}
+		}
+	}
+
+	//==================when hovered===================
+
+	&:hover {
+		.nav-topbar {
+			background-color: $red;
+		}
+		.nav-main {
+			background-color: $white;
+			.container {
+				.nav-left {
+					.logo {
+						background-image: url(./../img/logo_red.png);
+					}
+					.nav-links {
+						li {
+							a {
+								color: $text-dark;
+							}
+						}
+					}
+				}
+				.nav-right {
+					a {
+						i {
+							color: $text-dark;
+						}
+					}
+				}
+			}
+		}
+	}
 }
-section.product-tab{
-    position: fixed;
-    top: 12rem;
-    left:19rem;
-    background-color: $white;
-    min-height: 48rem;
-    z-index: -1;
-    
+section.test {
+	height: 150rem;
+	background-color: antiquewhite;
 }
 
-
-.no-border{
-    border: none !important;
+.no-border {
+	border: none !important;
 }
